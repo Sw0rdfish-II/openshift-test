@@ -5,6 +5,7 @@
                 <img src="animation.gif"><br>
 		<?php
 			echo "Test!";
+			echo 'You are on: ' .$_ENV["STAGE"] . '!';
 //  			$stage = getenv('STAGE');
 //  			echo "Stage: $stage";
 		?>  
