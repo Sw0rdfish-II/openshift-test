@@ -3,6 +3,9 @@
         <body>
                 <h1>Wohoooooo it works like a G!</h1><br>
                 <img src="animation.gif"><br>
-                <h1>You are on the <%= STAGE %> Environment.</h1><br>
+		<?php
+  			$db = getenv('STAGE');
+  			echo "Stage: $db  \r\n"
+		?>  
         </body>
 </html>
