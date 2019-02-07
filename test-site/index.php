@@ -4,7 +4,7 @@
                 <h1>Wohoooooo it works!</h1><br>
                 <img src="animation.gif"><br>
 		<?php
-			phpinfo();
+			echo "Test!";
 //  			$stage = getenv('STAGE');
 //  			echo "Stage: $stage";
 		?>  
