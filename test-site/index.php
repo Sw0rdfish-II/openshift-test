@@ -3,11 +3,6 @@
         <body>
                 <h1>Wohoooooo it works!</h1><br>
                 <img src="animation.gif"><br>
-		<?php
-			echo "Test!";
-			echo 'You are on: ' .$_ENV["STAGE"] . '!';
-//  			$stage = getenv('STAGE');
-//  			echo "Stage: $stage";
-		?>  
+		<h1><?php echo 'You are on the =>' .$_ENV["STAGE"] . '<= Environment!'; ?></h1>
         </body>
 </html>
