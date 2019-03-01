@@ -19,7 +19,7 @@ $db_user = $_ENV["DB_USER"]
 $db_password = $_ENV["DB_PASSWORD"]
 
 
-$conn = pg_connect(host=$db_host port=$db_port dbname=$db_name user=$db_user password=$db_password);
+$conn = pg_connect("host=$db_host port=$db_port dbname=$db_name user=$db_user password=$db_password");
 if (!$conn) {
   echo "PostgreSQL-DB-Verbindung fehlgeschlagen.\n";
   exit;
