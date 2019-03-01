@@ -8,6 +8,7 @@
 		<h1>DB-Config</h1>
 		<p><?php echo 'DB-Host: ' .$_ENV["DB_HOST"] . ''; ?></p>
 		<p><?php echo 'DB-Port: ' .$_ENV["DB_PORT"] . ''; ?></p>
+		<p><?php echo 'DB-Name: ' .$_ENV["DB_NAME"] . ''; ?></p>
 		<p><?php echo 'DB-User: ' .$_ENV["DB_USER"] . ''; ?></p>
         </body>
 </html>
@@ -15,6 +16,7 @@
 <?php
 $db_host = $_ENV["DB_HOST"];
 $db_port = $_ENV["DB_PORT"];
+$db_name = $_ENV["DB_NAME"];
 $db_user = $_ENV["DB_USER"];
 $db_password = $_ENV["DB_PASSWORD"];
 
