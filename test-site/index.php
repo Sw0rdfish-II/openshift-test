@@ -8,12 +8,18 @@
 		<h1>DB-Config</h1>
 		<p><?php echo 'DB-Host: ' .$_ENV["DB_HOST"] . ''; ?></p>
 		<p><?php echo 'DB-Port: ' .$_ENV["DB_PORT"] . ''; ?></p>
-		<p><?php echo 'DB-User: ' $_ENV["DB_USER"]  ''; ?></p>
+		<p><?php echo 'DB-User: ' .$_ENV["DB_USER"] . ''; ?></p>
         </body>
 </html>
 
 <?php
-// $conn = pg_connect(host=$_ENV["DB_HOST"] port=$_ENV["DB_PORT"] dbname=$_ENV["DB_NAME"] user=$DB_USER password=$DB_PASSWORD);
+$db_host = $_ENV["DB_HOST"]
+$db_port = $_ENV["DB_PORT"]
+$db_user = $_ENV["DB_USER"]
+$db_password = $_ENV["DB_PASSWORD"]
+
+
+$conn = pg_connect(host=$db_host port=$db_port dbname=$db_name user=$db_user password=$db_password);
 if (!$conn) {
   echo "PostgreSQL-DB-Verbindung fehlgeschlagen.\n";
   exit;
