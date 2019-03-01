@@ -8,7 +8,7 @@
 </html>
 
 <?php
-$conn = pg_connect("host=.$_ENV["DB_HOST"] port=$DB_PORT dbname=$DB_NAME user=$DB_USER password=$DB_PASSWORD");
+$conn = pg_connect("host=$_ENV["DB_HOST"] port=$_ENV["DB_PORT"] dbname=$_ENV["DB_NAME"] user=$DB_USER password=$DB_PASSWORD");
 if (!$conn) {
   echo "PostgreSQL-DB-Verbindung fehlgeschlangen.\n";
   exit;
