@@ -8,7 +8,7 @@
 		<h1>DB-Config</h1>
 		<p><?php echo 'DB-Host: ' .$_ENV["DB_HOST"] . ''; ?></p>
 		<p><?php echo 'DB-Port: ' .$_ENV["DB_PORT"] . ''; ?></p>
-		<p><?php echo 'DB-User: ' .$_ENV["DB_USER"] . ''; ?></p>
+		<p><?php echo 'DB-User: ' $_ENV["DB_USER"]  ''; ?></p>
         </body>
 </html>
 
